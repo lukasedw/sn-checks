@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+# Manage environments variables [https://github.com/bkeepers/dotenv]
+gem "dotenv-rails", require: "dotenv/rails-now"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 
@@ -36,12 +39,24 @@ gem "bootsnap", require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem "rack-cors"
 
+# Faraday API client [https://lostisland.github.io/faraday/]
+gem "faraday", "~> 2.3"
+
+# Faraday for retry [https://github.com/lostisland/faraday-retry]
+gem "faraday-retry", "~> 2.0"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 
   # RSpec tests [https://github.com/rspec/rspec-rails]
   gem "rspec-rails", "~> 6.0.0"
+
+  # VCR [https://relishapp.com/vcr/vcr/docs]
+  gem "vcr", "~> 6.1"
+
+  # Webmock
+  gem "webmock", "~> 3.18", ">= 3.18.1"
 end
 
 group :development do
