@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://takehome.io/twitter
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 20 Oct 2022 21:31:58 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Cloud-Trace-Context:
+      - 2c7d9348fb4b23e45058d424a20de745;o=1
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Hx0Ru0%2Bbsr6MmbcNjqCmaeXky%2Bg6olPVoMb1dQ79zWJmzHo6NByIcD1DXxopcNQO3zWiSUZ48GQ0%2BOIXGY%2FyZE%2BA1VVpxiEX9lFR9WkCVrVxpf4Z5Nhu%2Bv3UBKu%2FfQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 75d4dd0b6cf10305-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"username":"@GuyEndoreKaiser","tweet":"If you live to be 100, you
+        should make up some fake reason why, just to mess with people... like claim
+        you ate a pinecone every single day."},{"username":"@mikeleffingwell","tweet":"STOP
+        TELLING ME YOUR NEWBORN''S WEIGHT AND LENGTH I DON''T KNOW WHAT TO DO WITH
+        THAT INFORMATION."}]'
+  recorded_at: Thu, 20 Oct 2022 21:31:58 GMT
+recorded_with: VCR 6.1.0
