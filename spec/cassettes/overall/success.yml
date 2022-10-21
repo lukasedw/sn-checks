@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 21 Oct 2022 12:22:59 GMT
+      - Fri, 21 Oct 2022 12:36:31 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -29,19 +29,19 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Cloud-Trace-Context:
-      - 29c189f0db8dfdc2877b6c1599470d95;o=1
+      - f550a2b05cae099117ce4f60b44c8cb3
       Via:
       - 1.1 google
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4WPrYVbNIiwHQDU%2FNHpYaFRe8t9yJIxOgeZgDn2Yp8urEzUH5gO%2BjNOSHMHHxLSmQ33LiXpC8BIqw1EFLeUlh%2F3mC91rVo8SGWNqn70Nt%2FMPeBCt9sVFmvjubf6qiw%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7j3pSRpoXvhzVr3ecL4NRsbWVSydhvQvzo2Hsj9jNE2f4JUyNuFvFSb8Dce%2Bk9UOWrKrJjApTinPNCLqxLEd8eIzWFrESErBs5Dz2p4Y5VsIS9tfHj%2FqstgRV5fQ2A%3D%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 75d9f63ccb4b51b3-GRU
+      - 75da0a106aeba47d-GRU
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -51,7 +51,7 @@ http_interactions:
         you ate a pinecone every single day."},{"username":"@mikeleffingwell","tweet":"STOP
         TELLING ME YOUR NEWBORN''S WEIGHT AND LENGTH I DON''T KNOW WHAT TO DO WITH
         THAT INFORMATION."}]'
-  recorded_at: Fri, 21 Oct 2022 12:22:59 GMT
+  recorded_at: Fri, 21 Oct 2022 12:36:31 GMT
 - request:
     method: get
     uri: https://takehome.io/facebook
@@ -71,7 +71,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 21 Oct 2022 12:23:00 GMT
+      - Fri, 21 Oct 2022 12:36:32 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -81,19 +81,19 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Cloud-Trace-Context:
-      - ded2eff9886fba255670caab5f34adda
+      - bbed3ec1c45ba6b33b80e55354294384
       Via:
       - 1.1 google
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3wE3ccoGvxQHAakrWM9TmLlobnRvsh0L1lbBQ4dLhE3DBM3yNg1xGkDxdI%2B96jkemm7hQwZHmlcqlHjSy5EpkjWZ224yFuvvR%2Fvu8rkt4Qr%2F4IY04QqFiSD%2BZBS3rg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=O%2BzN7qEb6QYxE0cvazjB4jj%2B83ow643mB8ux7q4Xz1xnPWHlIxz4ZTqONkkMHn%2FzKvbZtnZ%2BCWBEcYNinSaQ0%2BbOUs3AeI%2BkJQvYBpy5aH5NCTTBPs4%2BJdr4fZEatg%3D%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 75d9f63f2bee51d2-GRU
+      - 75da0a12cf2ea4aa-GRU
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -101,5 +101,54 @@ http_interactions:
       string: '[{"name":"Some Friend","status":"Here''s some photos of my holiday.
         Look how much more fun I''m having than you are!"},{"name":"Drama Pig","status":"I
         am in a hospital. I will not tell you anything about why I am here."}]'
-  recorded_at: Fri, 21 Oct 2022 12:23:00 GMT
+  recorded_at: Fri, 21 Oct 2022 12:36:32 GMT
+- request:
+    method: get
+    uri: https://takehome.io/instagram
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 21 Oct 2022 12:36:33 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Cloud-Trace-Context:
+      - 7bc6cbb0046006c38a58070b2ca396ea
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Z5IUgLeWvPs60Rtm6mzIHgHXvtSZEybbLbGI9Azb5IDQ9xBfhFg0XyDdgrv4uGmXxzr7P5udclEySD0ieOg33jcElPMMSy%2BzY19BTn8U5YK39s%2B6FRTqSAKYUQxLAA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 75da0a151c1502e6-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"username":"hipster1","picture":"food"},{"username":"hipster2","picture":"coffee"},{"username":"hipster3","picture":"coffee"},{"username":"hipster4","picture":"food"},{"username":"hipster5","picture":"this
+        one is of a cat"}]'
+  recorded_at: Fri, 21 Oct 2022 12:36:33 GMT
 recorded_with: VCR 6.1.0

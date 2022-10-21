@@ -4,6 +4,7 @@ RSpec.describe OverallService do
   let(:subject_instance) { subject.call }
   let(:twitter) { subject_instance[:twitter] }
   let(:facebook) { subject_instance[:facebook] }
+  let(:instagram) { subject_instance[:instagram] }
   let(:errors) { subject_instance[:errors] }
 
   describe "Success call overall", vcr: { cassette_name: "overall/success" } do
@@ -13,6 +14,10 @@ RSpec.describe OverallService do
 
     it "returns facebook" do
       expect(facebook).not_to be_empty
+    end
+
+    it "returns instagram" do
+      expect(instagram).not_to be_empty
     end
   end
 
@@ -33,6 +38,16 @@ RSpec.describe OverallService do
 
     it "returns errors" do
       expect(errors).to include("It was not possible to have a response from FacebookStatusesService")
+    end
+  end
+
+  describe "Failure response instagram", vcr: { cassette_name: "overall/failure" } do
+    it "returns instagram nil" do
+      expect(instagram).to be_nil
+    end
+
+    it "returns errors" do
+      expect(errors).to include("It was not possible to have a response from InstagramPicturesService")
     end
   end
 end
