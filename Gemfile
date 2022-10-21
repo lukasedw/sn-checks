@@ -55,8 +55,11 @@ group :development, :test do
   # VCR [https://relishapp.com/vcr/vcr/docs]
   gem "vcr", "~> 6.1"
 
-  # Webmock
+  # Webmock [https://github.com/bblimke/webmock]
   gem "webmock", "~> 3.18", ">= 3.18.1"
+
+  # Simplecov [https://github.com/simplecov-ruby/simplecov]
+  gem "simplecov"
 end
 
 group :development do
