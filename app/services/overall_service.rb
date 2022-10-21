@@ -3,7 +3,8 @@ class OverallService < ApplicationService
   def call
     @errors = []
     result = {
-      twitter: twitter
+      twitter: twitter,
+      facebook: facebook,
     }
     result[:errors] = @errors if @errors.present?
     result
@@ -18,4 +19,12 @@ class OverallService < ApplicationService
     end
   end
 
+  def facebook
+    begin
+      FacebookStatusesService.call
+    rescue FacebookStatusesService::Failed => e
+      @errors << e.message
+      nil
+    end
+  end
 end

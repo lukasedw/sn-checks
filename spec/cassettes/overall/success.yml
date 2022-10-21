@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 20 Oct 2022 21:31:58 GMT
+      - Fri, 21 Oct 2022 12:22:59 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -29,19 +29,19 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Cloud-Trace-Context:
-      - 2c7d9348fb4b23e45058d424a20de745;o=1
+      - 29c189f0db8dfdc2877b6c1599470d95;o=1
       Via:
       - 1.1 google
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Hx0Ru0%2Bbsr6MmbcNjqCmaeXky%2Bg6olPVoMb1dQ79zWJmzHo6NByIcD1DXxopcNQO3zWiSUZ48GQ0%2BOIXGY%2FyZE%2BA1VVpxiEX9lFR9WkCVrVxpf4Z5Nhu%2Bv3UBKu%2FfQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4WPrYVbNIiwHQDU%2FNHpYaFRe8t9yJIxOgeZgDn2Yp8urEzUH5gO%2BjNOSHMHHxLSmQ33LiXpC8BIqw1EFLeUlh%2F3mC91rVo8SGWNqn70Nt%2FMPeBCt9sVFmvjubf6qiw%3D%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 75d4dd0b6cf10305-GRU
+      - 75d9f63ccb4b51b3-GRU
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -51,5 +51,55 @@ http_interactions:
         you ate a pinecone every single day."},{"username":"@mikeleffingwell","tweet":"STOP
         TELLING ME YOUR NEWBORN''S WEIGHT AND LENGTH I DON''T KNOW WHAT TO DO WITH
         THAT INFORMATION."}]'
-  recorded_at: Thu, 20 Oct 2022 21:31:58 GMT
+  recorded_at: Fri, 21 Oct 2022 12:22:59 GMT
+- request:
+    method: get
+    uri: https://takehome.io/facebook
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 21 Oct 2022 12:23:00 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Cloud-Trace-Context:
+      - ded2eff9886fba255670caab5f34adda
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3wE3ccoGvxQHAakrWM9TmLlobnRvsh0L1lbBQ4dLhE3DBM3yNg1xGkDxdI%2B96jkemm7hQwZHmlcqlHjSy5EpkjWZ224yFuvvR%2Fvu8rkt4Qr%2F4IY04QqFiSD%2BZBS3rg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 75d9f63f2bee51d2-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"name":"Some Friend","status":"Here''s some photos of my holiday.
+        Look how much more fun I''m having than you are!"},{"name":"Drama Pig","status":"I
+        am in a hospital. I will not tell you anything about why I am here."}]'
+  recorded_at: Fri, 21 Oct 2022 12:23:00 GMT
 recorded_with: VCR 6.1.0

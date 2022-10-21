@@ -8,42 +8,88 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v2.3.0
+        - Faraday v2.3.0
       Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+        - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+        - "*/*"
   response:
     status:
       code: 500
       message: Internal Server Error
     headers:
       Date:
-      - Thu, 20 Oct 2022 21:36:29 GMT
+        - Thu, 20 Oct 2022 21:36:29 GMT
       Content-Type:
-      - text/plain; charset=utf-8
+        - text/plain; charset=utf-8
       Content-Length:
-      - '48'
+        - '48'
       Connection:
-      - keep-alive
+        - keep-alive
       X-Cloud-Trace-Context:
-      - 3dd7b2b01de811692139c87ea7c0f1f0;o=1
+        - 3dd7b2b01de811692139c87ea7c0f1f0;o=1
       Via:
-      - 1.1 google
+        - 1.1 google
       Cf-Cache-Status:
-      - DYNAMIC
+        - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=i0KZ4PjQhjjO3SQaYMWbJ9ztvyV%2BU4AShjNk8IeK8i6cYk1UyQriZteiPokp7oS%2B93AdMqRPVGRzl9yDTKpmbPMznLsvYyq1BskkCPBZv3uMrfQ55r0qdFBlIBFCGg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+        - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=i0KZ4PjQhjjO3SQaYMWbJ9ztvyV%2BU4AShjNk8IeK8i6cYk1UyQriZteiPokp7oS%2B93AdMqRPVGRzl9yDTKpmbPMznLsvYyq1BskkCPBZv3uMrfQ55r0qdFBlIBFCGg%3D%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+        - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
-      - cloudflare
+        - cloudflare
       Cf-Ray:
-      - 75d4e3a77da50185-GRU
+        - 75d4e3a77da50185-GRU
       Alt-Svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+        - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: UTF-8
       string: I am trapped in a social media factory send help
-  recorded_at: Thu, 20 Oct 2022 21:36:29 GMT
+  recorded_at: Fri, 21 Oct 2022 12:23:00 GMT
+- request:
+    method: get
+    uri: https://takehome.io/facebook
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+        - Faraday v2.3.0
+      Accept-Encoding:
+        - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+        - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Date:
+        - Fri, 21 Oct 2022 12:19:25 GMT
+      Content-Type:
+        - text/plain; charset=utf-8
+      Content-Length:
+        - '48'
+      Connection:
+        - keep-alive
+      X-Cloud-Trace-Context:
+        - 50d45e427260341d966a496e4e69c303
+      Via:
+        - 1.1 google
+      Cf-Cache-Status:
+        - DYNAMIC
+      Report-To:
+        - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OnP%2F%2FosdrjdAssCljKarqzoPswMQjUCMQlbgOKw5ATXoj%2FTTE2Y2ClAvROJ4yvGKd3nn4vhTzyPyhbZkeSiDNcBaU8BtzpWYFVw0%2BvKwmOqQYP94q4938oPFNFvOSA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+        - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+        - cloudflare
+      Cf-Ray:
+        - 75d9f101bb72a583-GRU
+      Alt-Svc:
+        - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: I am trapped in a social media factory send help
+  recorded_at: Fri, 21 Oct 2022 12:23:00 GMT
 recorded_with: VCR 6.1.0
